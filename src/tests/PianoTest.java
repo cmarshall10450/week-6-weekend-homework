@@ -17,12 +17,18 @@ public class PianoTest {
 
   @Before
   public void before() {
-    piano = new Piano(Colour.BLUE, InstrumentType.PERCUSSION, 64);
+    piano = new Piano(Colour.BLACK, InstrumentType.PERCUSSION, 64);
   }
 
   @Test
   public void pianoHasSIxtyFourKeys() {
     assertEquals(64, piano.getNumKeys());
   }
+
+  @Test
+  public void pianoIsBlack(){
+    assertEquals(Colour.BLACK, piano.getColour());
+  }
+  
 
 }
