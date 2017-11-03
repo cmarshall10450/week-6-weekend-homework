@@ -23,4 +23,9 @@ public class SheetMusicTest {
     assertEquals(ItemType.MISC, sheetMusic.getItemType());
   }
 
+  @Test
+  public void sheetMusicHas100Pages() {
+    assertEquals(100, sheetMusic.getNumPages());
+  }
+
 }

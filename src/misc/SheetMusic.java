@@ -11,4 +11,8 @@ public class SheetMusic extends Item {
     super(buyPrice, sellPrice, description, ItemType.MISC);
     this.numPages = numPages;
   }
+
+  public int getNumPages() {
+    return numPages;
+  }
 }
