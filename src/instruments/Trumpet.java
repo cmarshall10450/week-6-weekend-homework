@@ -1,18 +1,20 @@
 package instruments;
 
-/**
- * Created by chris on 03/11/2017.
- */
 public class Trumpet extends Instrument {
 
   int numValves;
 
-  public Trumpet(Colour colour, InstrumentType type, int numValves) {
-    super(colour, type);
+  public Trumpet(Colour colour, InstrumentType type, int numValves, double buyPrice, double sellPrice) {
+    super(colour, type, buyPrice, sellPrice);
     this.numValves = numValves;
   }
 
   public int getNumValves() {
     return numValves;
+  }
+
+  @Override
+  public String play() {
+    return "Brrrrp";
   }
 }

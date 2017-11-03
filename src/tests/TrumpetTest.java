@@ -17,7 +17,7 @@ public class TrumpetTest {
 
   @Before
   public void before() {
-    trumpet = new Trumpet(Colour.YELLOW, InstrumentType.BRASS, 5);
+    trumpet = new Trumpet(Colour.YELLOW, InstrumentType.BRASS, 5, 100, 200);
   }
 
   @Test

@@ -17,7 +17,7 @@ public class PianoTest {
 
   @Before
   public void before() {
-    piano = new Piano(Colour.BLACK, InstrumentType.PERCUSSION, 64);
+    piano = new Piano(Colour.BLACK, InstrumentType.PERCUSSION, 64, 1000, 5000);
   }
 
   @Test

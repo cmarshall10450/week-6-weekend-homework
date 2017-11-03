@@ -1,14 +1,14 @@
 package instruments;
 
-/**
- * Created by chris on 03/11/2017.
- */
-public class Instrument {
+import behaviours.Playable;
+
+public abstract class Instrument extends Item implements Playable{
 
   Colour colour;
   InstrumentType type;
 
-  public Instrument(Colour colour, InstrumentType type) {
+  public Instrument(Colour colour, InstrumentType type, double buyPrice, double sellPrice) {
+    super(buyPrice, sellPrice);
     this.colour = colour;
     this.type = type;
   }
