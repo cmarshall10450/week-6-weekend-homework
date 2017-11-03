@@ -16,4 +16,8 @@ public class Instrument {
   public Colour getColour() {
     return colour;
   }
+
+  public InstrumentType getType() {
+    return type;
+  }
 }

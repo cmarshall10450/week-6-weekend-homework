@@ -26,8 +26,13 @@ public class TrumpetTest {
   }
 
   @Test
-  public void trumpetIsYellow(){
-    assertEquals(Colour.);
+  public void trumpetIsYellow() {
+    assertEquals(Colour.YELLOW, trumpet.getColour());
+  }
+
+  @Test
+  public void trumpetIsBrassInstrument() {
+    assertEquals(InstrumentType.BRASS, trumpet.getType());
   }
 
 }
