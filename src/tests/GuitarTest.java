@@ -21,4 +21,9 @@ public class GuitarTest {
     assertEquals(6, guitar.getNumStrings());
   }
 
+  @Test
+  public void guitarIsMadeOFMaple() {
+    assertEquals(WoodType.MAPLE, guitar.getWoodType());
+  }
+
 }
