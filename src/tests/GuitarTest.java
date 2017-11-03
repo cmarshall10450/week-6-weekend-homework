@@ -33,4 +33,9 @@ public class GuitarTest {
     assertEquals(Colour.BLUE, guitar.getColour());
   }
 
+  @Test
+  public void guitarIsStringInstrument() {
+    assertEquals(InstrumentType.STRING, guitar.getType());
+  }
+
 }
