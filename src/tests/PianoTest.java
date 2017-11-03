@@ -1,5 +1,7 @@
 package tests;
 
+import instruments.Colour;
+import instruments.InstrumentType;
 import instruments.Piano;
 import org.junit.Before;
 import org.junit.Test;
@@ -15,7 +17,7 @@ public class PianoTest {
 
   @Before
   public void before() {
-    piano = new Piano(64);
+    piano = new Piano(Colour.BLUE, InstrumentType.PERCUSSION, 64);
   }
 
   @Test

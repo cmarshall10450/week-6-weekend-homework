@@ -1,6 +1,8 @@
 package tests;
 
+import instruments.Colour;
 import instruments.Guitar;
+import instruments.InstrumentType;
 import instruments.WoodType;
 import org.junit.Before;
 import org.junit.Test;
@@ -13,7 +15,7 @@ public class GuitarTest {
 
   @Before
   public void before() {
-    guitar = new Guitar(6, WoodType.MAPLE);
+    guitar = new Guitar(Colour.BLUE, InstrumentType.STRING, 6, WoodType.MAPLE);
   }
 
   @Test
@@ -24,6 +26,11 @@ public class GuitarTest {
   @Test
   public void guitarIsMadeOFMaple() {
     assertEquals(WoodType.MAPLE, guitar.getWoodType());
+  }
+
+  @Test
+  public void guitarIsBlue() {
+    assertEquals(Colour.BLUE, guitar.getColour());
   }
 
 }

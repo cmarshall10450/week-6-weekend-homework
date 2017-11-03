@@ -1,5 +1,7 @@
 package tests;
 
+import instruments.Colour;
+import instruments.InstrumentType;
 import instruments.Trumpet;
 import org.junit.Before;
 import org.junit.Test;
@@ -15,12 +17,17 @@ public class TrumpetTest {
 
   @Before
   public void before() {
-    trumpet = new Trumpet(5);
+    trumpet = new Trumpet(Colour.YELLOW, InstrumentType.BRASS, 5);
   }
 
   @Test
   public void trumpetHasFiveValves() {
     assertEquals(5, trumpet.getNumValves());
+  }
+
+  @Test
+  public void trumpetIsYellow(){
+    assertEquals(Colour.);
   }
 
 }

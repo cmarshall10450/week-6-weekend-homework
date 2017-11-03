@@ -3,11 +3,12 @@ package instruments;
 /**
  * Created by chris on 03/11/2017.
  */
-public class Trumpet {
+public class Trumpet extends Instrument {
 
   int numValves;
 
-  public Trumpet(int numValves) {
+  public Trumpet(Colour colour, InstrumentType type, int numValves) {
+    super(colour, type);
     this.numValves = numValves;
   }
 
