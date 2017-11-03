@@ -16,6 +16,10 @@ public class Shop {
     stock.add(item);
   }
 
+  public void removeItem(Sellable item) {
+    stock.remove(item);
+  }
+
   public ArrayList<Sellable> getStock() {
     return stock;
   }

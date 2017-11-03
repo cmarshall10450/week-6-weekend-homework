@@ -27,4 +27,14 @@ public class ShopTest {
     assertEquals(1, shop.getStockCount());
   }
 
+  @Test
+  public void canRemoveItemFromShop() {
+    Guitar guitar = new Guitar(Colour.BLUE, InstrumentType.STRING, 6, WoodType.MAPLE, 50, 100, "Guitar");
+    shop.addItemToStock(guitar);
+    assertEquals(1, shop.getStockCount());
+
+    shop.removeItem(guitar);
+    assertEquals(0, shop.getStockCount());
+  }
+
 }

@@ -55,4 +55,9 @@ public class PianoTest {
     assertEquals("Piano", piano.getDescription());
   }
 
+  @Test
+  public void canGetMarkupOfPiano() {
+    assertEquals(4000, piano.calculateMarkup(), 0.01);
+  }
+
 }

@@ -58,4 +58,9 @@ public class GuitarTest {
     assertEquals("Guitar", guitar.getDescription());
   }
 
+  @Test
+  public void canGetMarkupOfGuitar(){
+    assertEquals(50, guitar.calculateMarkup(), 0.01);
+  }
+
 }

@@ -50,4 +50,9 @@ public class TrumpetTest {
     assertEquals("Trumpet", trumpet.getDescription());
   }
 
+  @Test
+  public void canGetMarkupOfTrumpet() {
+    assertEquals(100, trumpet.calculateMarkup(), 0.01);
+  }
+
 }
