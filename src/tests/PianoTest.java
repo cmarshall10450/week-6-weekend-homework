@@ -26,9 +26,13 @@ public class PianoTest {
   }
 
   @Test
-  public void pianoIsBlack(){
+  public void pianoIsBlack() {
     assertEquals(Colour.BLACK, piano.getColour());
   }
-  
+
+  @Test
+  public void pianoIsPercussionIntrument() {
+    assertEquals(InstrumentType.PERCUSSION, piano.getType());
+  }
 
 }
