@@ -5,6 +5,13 @@ package instruments;
  */
 public class Piano {
 
+  int numKeys;
 
+  public Piano(int numKeys) {
+    this.numKeys = numKeys;
+  }
 
+  public int getNumKeys() {
+    return numKeys;
+  }
 }
