@@ -9,10 +9,12 @@ public abstract class Item implements Sellable {
 
   double buyPrice;
   double sellPrice;
+  String description;
 
-  public Item(double buyPrice, double sellPrice) {
+  public Item(double buyPrice, double sellPrice, String description) {
     this.buyPrice = buyPrice;
     this.sellPrice = sellPrice;
+    this.description = description;
   }
 
   public double getBuyPrice() {
@@ -23,8 +25,13 @@ public abstract class Item implements Sellable {
     return sellPrice;
   }
 
+  public String getDescription() {
+    return description;
+  }
+
   @Override
   public double calculateMarkup() {
     return sellPrice - buyPrice;
   }
+
 }

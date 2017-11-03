@@ -17,7 +17,7 @@ public class PianoTest {
 
   @Before
   public void before() {
-    piano = new Piano(Colour.BLACK, InstrumentType.PERCUSSION, 64, 1000, 5000);
+    piano = new Piano(Colour.BLACK, InstrumentType.PERCUSSION, 64, 1000, 5000, "Piano");
   }
 
   @Test
@@ -48,6 +48,11 @@ public class PianoTest {
   @Test
   public void pianoIsSoldFor5000() {
     assertEquals(5000, piano.getSellPrice(), 0.01);
+  }
+
+  @Test
+  public void pianoHasDescription() {
+    assertEquals("Piano", piano.getDescription());
   }
 
 }

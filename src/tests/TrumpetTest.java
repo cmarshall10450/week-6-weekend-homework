@@ -17,7 +17,7 @@ public class TrumpetTest {
 
   @Before
   public void before() {
-    trumpet = new Trumpet(Colour.YELLOW, InstrumentType.BRASS, 5, 100, 200);
+    trumpet = new Trumpet(Colour.YELLOW, InstrumentType.BRASS, 5, 100, 200, "Trumpet");
   }
 
   @Test
@@ -43,6 +43,11 @@ public class TrumpetTest {
   @Test
   public void trumpetIsBoughtFor100() {
     assertEquals(100, trumpet.getBuyPrice(), 0.01);
+  }
+
+  @Test
+  public void trumpetHasDescription() {
+    assertEquals("Trumpet", trumpet.getDescription());
   }
 
 }
