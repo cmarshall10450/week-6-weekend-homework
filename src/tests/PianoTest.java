@@ -35,4 +35,9 @@ public class PianoTest {
     assertEquals(InstrumentType.PERCUSSION, piano.getType());
   }
 
+  @Test
+  public void pianoCanBePlayed(){
+    assertEquals("Plink plonk", piano.play());
+  }
+
 }
