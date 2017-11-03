@@ -35,7 +35,7 @@ public class TrumpetTest {
 
   @Test
   public void trumpetIsOfItemTypeInstrument() {
-    assertEquals(ItemType.INTSTRUMENT, trumpet.getItemType());
+    assertEquals(ItemType.INSTRUMENT, trumpet.getItemType());
   }
 
   @Test

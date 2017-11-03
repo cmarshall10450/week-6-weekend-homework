@@ -1,6 +1,10 @@
 package misc;
 
 import org.junit.Before;
+import org.junit.Test;
+import shop.ItemType;
+
+import static org.junit.Assert.assertEquals;
 
 /**
  * Created by chris on 03/11/2017.
@@ -14,6 +18,9 @@ public class SheetMusicTest {
     sheetMusic = new SheetMusic(100, 10, 15, "Sheet Music");
   }
 
-
+  @Test
+  public void sheetMusicIsOfItemTypeMisc() {
+    assertEquals(ItemType.MISC, sheetMusic.getItemType());
+  }
 
 }

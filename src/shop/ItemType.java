@@ -6,7 +6,7 @@ package shop;
 public enum ItemType {
 
   MISC,
-  INTSTRUMENT,
+  INSTRUMENT,
   ACCESSORY
 
 }

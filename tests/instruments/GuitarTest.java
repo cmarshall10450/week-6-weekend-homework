@@ -37,7 +37,7 @@ public class GuitarTest {
 
   @Test
   public void guitarIsOfItemTypeInstrument() {
-    assertEquals(ItemType.INTSTRUMENT, guitar.getItemType());
+    assertEquals(ItemType.INSTRUMENT, guitar.getItemType());
   }
 
   @Test

@@ -35,7 +35,7 @@ public class PianoTest {
 
   @Test
   public void pianoIsOfItemTypeInstrument() {
-    assertEquals(ItemType.INTSTRUMENT, piano.getItemType());
+    assertEquals(ItemType.INSTRUMENT, piano.getItemType());
   }
 
   @Test
