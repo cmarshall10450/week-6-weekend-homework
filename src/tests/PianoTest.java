@@ -40,4 +40,9 @@ public class PianoTest {
     assertEquals("Plink plonk", piano.play());
   }
 
+  @Test
+  public void pianoIsBoughtFor50() {
+    assertEquals(1000, piano.getBuyPrice(), 0.01);
+  }
+
 }
