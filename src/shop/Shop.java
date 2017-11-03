@@ -16,6 +16,12 @@ public class Shop {
     stock.add(item);
   }
 
+  public void addItemsToStock(Sellable... items) {
+    for (Sellable item : items) {
+      addItemToStock(item);
+    }
+  }
+
   public void removeItem(Sellable item) {
     stock.remove(item);
   }
@@ -26,6 +32,15 @@ public class Shop {
 
   public int getStockCount() {
     return stock.size();
+  }
+
+  public double getTotalPotentialProfit() {
+    double potentialProfit = 0;
+    for (Sellable item : stock) {
+      potentialProfit += item.calculateMarkup();
+    }
+
+    return potentialProfit;
   }
 
 }

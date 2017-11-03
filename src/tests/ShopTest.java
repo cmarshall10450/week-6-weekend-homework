@@ -1,9 +1,6 @@
 package tests;
 
-import instruments.Colour;
-import instruments.Guitar;
-import instruments.InstrumentType;
-import instruments.WoodType;
+import instruments.*;
 import org.junit.Before;
 import org.junit.Test;
 import shop.Shop;
@@ -35,6 +32,17 @@ public class ShopTest {
 
     shop.removeItem(guitar);
     assertEquals(0, shop.getStockCount());
+  }
+
+  @Test
+  public void canGetTotalPotentialProfit() {
+    Guitar guitar = new Guitar(Colour.BLUE, InstrumentType.STRING, 6, WoodType.MAPLE, 50, 100, "Guitar");
+    Trumpet trumpet = new Trumpet(Colour.YELLOW, InstrumentType.BRASS, 5, 100, 200, "Trumpet");
+    Piano piano = new Piano(Colour.BLACK, InstrumentType.PERCUSSION, 64, 1000, 5000, "Piano");
+
+    shop.addItemsToStock(guitar, trumpet, piano);
+
+    assertEquals(4150, shop.getTotalPotentialProfit(), 0.01);
   }
 
 }
