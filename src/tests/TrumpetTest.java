@@ -40,4 +40,9 @@ public class TrumpetTest {
     assertEquals("Brrrrp", trumpet.play());
   }
 
+  @Test
+  public void trumpetIsBoughtFor100() {
+    assertEquals(100, trumpet.getBuyPrice(), 0.01);
+  }
+
 }

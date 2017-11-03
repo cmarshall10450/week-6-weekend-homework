@@ -41,12 +41,12 @@ public class PianoTest {
   }
 
   @Test
-  public void pianoIsBoughtFor50() {
+  public void pianoIsBoughtFor1000() {
     assertEquals(1000, piano.getBuyPrice(), 0.01);
   }
 
   @Test
-  public void pianoIsSoldFor100() {
+  public void pianoIsSoldFor5000() {
     assertEquals(5000, piano.getSellPrice(), 0.01);
   }
 
