@@ -2,8 +2,8 @@ package instruments;
 
 public class Guitar extends Instrument {
 
-  int numStrings;
-  WoodType woodType;
+  private int numStrings;
+  private WoodType woodType;
 
   public Guitar(
     Colour colour,

@@ -1,13 +1,14 @@
 package misc;
 
-import instruments.Item;
+import shop.Item;
+import shop.ItemType;
 
 public class SheetMusic extends Item {
 
-  int numPages;
+  private int numPages;
 
   public SheetMusic(int numPages, double buyPrice, double sellPrice, String description) {
-    super(buyPrice, sellPrice, description);
+    super(buyPrice, sellPrice, description, ItemType.MISC);
     this.numPages = numPages;
   }
 }

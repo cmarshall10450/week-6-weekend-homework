@@ -1,10 +1,8 @@
-package tests;
+package instruments;
 
-import instruments.Colour;
-import instruments.InstrumentType;
-import instruments.Piano;
 import org.junit.Before;
 import org.junit.Test;
+import shop.ItemType;
 
 import static org.junit.Assert.assertEquals;
 
@@ -31,8 +29,13 @@ public class PianoTest {
   }
 
   @Test
-  public void pianoIsPercussionIntrument() {
-    assertEquals(InstrumentType.PERCUSSION, piano.getType());
+  public void pianoIsPercussionInstrument() {
+    assertEquals(InstrumentType.PERCUSSION, piano.getIntrumentType());
+  }
+
+  @Test
+  public void pianoIsOfItemTypeInstrument() {
+    assertEquals(ItemType.INTSTRUMENT, piano.getItemType());
   }
 
   @Test

@@ -1,10 +1,8 @@
-package tests;
+package instruments;
 
-import instruments.Colour;
-import instruments.InstrumentType;
-import instruments.Trumpet;
 import org.junit.Before;
 import org.junit.Test;
+import shop.ItemType;
 
 import static org.junit.Assert.assertEquals;
 
@@ -32,7 +30,12 @@ public class TrumpetTest {
 
   @Test
   public void trumpetIsBrassInstrument() {
-    assertEquals(InstrumentType.BRASS, trumpet.getType());
+    assertEquals(InstrumentType.BRASS, trumpet.getIntrumentType());
+  }
+
+  @Test
+  public void trumpetIsOfItemTypeInstrument() {
+    assertEquals(ItemType.INTSTRUMENT, trumpet.getItemType());
   }
 
   @Test

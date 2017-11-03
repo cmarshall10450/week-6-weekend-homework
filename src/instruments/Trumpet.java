@@ -2,7 +2,7 @@ package instruments;
 
 public class Trumpet extends Instrument {
 
-  int numValves;
+  private int numValves;
 
   public Trumpet(
     Colour colour,

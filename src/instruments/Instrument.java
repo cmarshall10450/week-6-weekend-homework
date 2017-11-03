@@ -1,14 +1,16 @@
 package instruments;
 
 import behaviours.Playable;
+import shop.Item;
+import shop.ItemType;
 
-public abstract class Instrument extends Item implements Playable{
+abstract class Instrument extends Item implements Playable {
 
-  Colour colour;
-  InstrumentType type;
+  private Colour colour;
+  private InstrumentType type;
 
-  public Instrument(Colour colour, InstrumentType type, double buyPrice, double sellPrice, String description) {
-    super(buyPrice, sellPrice, description);
+  Instrument(Colour colour, InstrumentType type, double buyPrice, double sellPrice, String description) {
+    super(buyPrice, sellPrice, description, ItemType.INTSTRUMENT);
     this.colour = colour;
     this.type = type;
   }
@@ -17,7 +19,7 @@ public abstract class Instrument extends Item implements Playable{
     return colour;
   }
 
-  public InstrumentType getType() {
+  public InstrumentType getIntrumentType() {
     return type;
   }
 }

@@ -1,9 +1,8 @@
-package tests;
+package shop;
 
 import instruments.*;
 import org.junit.Before;
 import org.junit.Test;
-import shop.Shop;
 
 import static org.junit.Assert.assertEquals;
 

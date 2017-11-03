@@ -1,11 +1,8 @@
-package tests;
+package instruments;
 
-import instruments.Colour;
-import instruments.Guitar;
-import instruments.InstrumentType;
-import instruments.WoodType;
 import org.junit.Before;
 import org.junit.Test;
+import shop.ItemType;
 
 import static org.junit.Assert.assertEquals;
 
@@ -35,7 +32,12 @@ public class GuitarTest {
 
   @Test
   public void guitarIsStringInstrument() {
-    assertEquals(InstrumentType.STRING, guitar.getType());
+    assertEquals(InstrumentType.STRING, guitar.getIntrumentType());
+  }
+
+  @Test
+  public void guitarIsOfItemTypeInstrument() {
+    assertEquals(ItemType.INTSTRUMENT, guitar.getItemType());
   }
 
   @Test
@@ -54,12 +56,12 @@ public class GuitarTest {
   }
 
   @Test
-  public void guitarHasDescription(){
+  public void guitarHasDescription() {
     assertEquals("Guitar", guitar.getDescription());
   }
 
   @Test
-  public void canGetMarkupOfGuitar(){
+  public void canGetMarkupOfGuitar() {
     assertEquals(50, guitar.calculateMarkup(), 0.01);
   }
 

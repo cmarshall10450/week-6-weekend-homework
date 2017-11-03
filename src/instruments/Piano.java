@@ -2,7 +2,7 @@ package instruments;
 
 public class Piano extends Instrument {
 
-  int numKeys;
+  private int numKeys;
 
   public Piano(Colour colour, InstrumentType type, int numKeys, double buyPrice, double sellPrice, String description) {
     super(colour, type, buyPrice, sellPrice, description);
