@@ -39,8 +39,13 @@ public class GuitarTest {
   }
 
   @Test
-  public void guitarCanBePlayed(){
+  public void guitarCanBePlayed() {
     assertEquals("Thwang", guitar.play());
+  }
+
+  @Test
+  public void guitarIsBoughtFor50() {
+    assertEquals(50, guitar.getBuyPrice(), 0.01);
   }
 
 }
