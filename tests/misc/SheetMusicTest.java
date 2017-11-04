@@ -15,7 +15,7 @@ public class SheetMusicTest {
 
   @Before
   public void before() {
-    sheetMusic = new SheetMusic(100, 10, 15, "Sheet Music");
+    sheetMusic = new SheetMusic(100, 10, 15, "Sheet Music", 10);
   }
 
   @Test

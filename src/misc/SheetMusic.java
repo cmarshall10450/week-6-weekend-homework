@@ -7,8 +7,8 @@ public class SheetMusic extends Item {
 
   private int numPages;
 
-  public SheetMusic(int numPages, double buyPrice, double sellPrice, String description) {
-    super(buyPrice, sellPrice, description, ItemType.MISC);
+  public SheetMusic(int numPages, double buyPrice, double sellPrice, String description, int stockCount) {
+    super(buyPrice, sellPrice, description, ItemType.MISC, stockCount);
     this.numPages = numPages;
   }
 

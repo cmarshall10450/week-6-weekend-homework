@@ -7,8 +7,8 @@ public class GuitarStrap extends Item {
 
   private int length;
 
-  public GuitarStrap(int length, double buyPrice, double sellPrice, String description) {
-    super(buyPrice, sellPrice, description, ItemType.ACCESSORY);
+  public GuitarStrap(int length, double buyPrice, double sellPrice, String description, int stockCount) {
+    super(buyPrice, sellPrice, description, ItemType.ACCESSORY, stockCount);
     this.length = length;
   }
 

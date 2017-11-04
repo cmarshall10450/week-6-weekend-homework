@@ -10,9 +10,10 @@ public class Trumpet extends Instrument {
     int numValves,
     double buyPrice,
     double sellPrice,
-    String description
+    String description,
+    int stockCount
   ) {
-    super(colour, type, buyPrice, sellPrice, description);
+    super(colour, type, buyPrice, sellPrice, description, stockCount);
     this.numValves = numValves;
   }
 

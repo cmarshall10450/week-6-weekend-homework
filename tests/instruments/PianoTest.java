@@ -6,16 +6,13 @@ import shop.ItemType;
 
 import static org.junit.Assert.assertEquals;
 
-/**
- * Created by chris on 03/11/2017.
- */
 public class PianoTest {
 
   Piano piano;
 
   @Before
   public void before() {
-    piano = new Piano(Colour.BLACK, InstrumentType.PERCUSSION, 64, 1000, 5000, "Piano");
+    piano = new Piano(Colour.BLACK, InstrumentType.PERCUSSION, 64, 1000, 5000, "Piano", 10);
   }
 
   @Test
@@ -61,6 +58,11 @@ public class PianoTest {
   @Test
   public void canGetMarkupOfPiano() {
     assertEquals(4000, piano.calculateMarkup(), 0.01);
+  }
+
+  @Test
+  public void pianoHasAStockCountOf10() {
+    assertEquals(10, piano.getStockCount());
   }
 
 }

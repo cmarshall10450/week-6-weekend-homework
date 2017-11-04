@@ -15,7 +15,7 @@ public class TrumpetTest {
 
   @Before
   public void before() {
-    trumpet = new Trumpet(Colour.YELLOW, InstrumentType.BRASS, 5, 100, 200, "Trumpet");
+    trumpet = new Trumpet(Colour.YELLOW, InstrumentType.BRASS, 5, 100, 200, "Trumpet", 10);
   }
 
   @Test
@@ -56,6 +56,11 @@ public class TrumpetTest {
   @Test
   public void canGetMarkupOfTrumpet() {
     assertEquals(100, trumpet.calculateMarkup(), 0.01);
+  }
+
+  @Test
+  public void pianoHasAStockCountOf10() {
+    assertEquals(10, trumpet.getStockCount());
   }
 
 }

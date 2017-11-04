@@ -12,9 +12,10 @@ public class Guitar extends Instrument {
     WoodType woodType,
     double buyPrice,
     double sellPrice,
-    String description
+    String description,
+    int stockCount
   ) {
-    super(colour, type, buyPrice, sellPrice, description);
+    super(colour, type, buyPrice, sellPrice, description, stockCount);
     this.numStrings = numStrings;
     this.woodType = woodType;
   }

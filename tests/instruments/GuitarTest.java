@@ -12,7 +12,7 @@ public class GuitarTest {
 
   @Before
   public void before() {
-    guitar = new Guitar(Colour.BLUE, InstrumentType.STRING, 6, WoodType.MAPLE, 50, 100, "Guitar");
+    guitar = new Guitar(Colour.BLUE, InstrumentType.STRING, 6, WoodType.MAPLE, 50, 100, "Guitar", 10);
   }
 
   @Test
@@ -63,6 +63,11 @@ public class GuitarTest {
   @Test
   public void canGetMarkupOfGuitar() {
     assertEquals(50, guitar.calculateMarkup(), 0.01);
+  }
+
+  @Test
+  public void guitarHasAStockCountOf10() {
+    assertEquals(10, guitar.getStockCount());
   }
 
 }

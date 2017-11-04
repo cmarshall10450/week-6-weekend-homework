@@ -6,16 +6,13 @@ import shop.ItemType;
 
 import static org.junit.Assert.assertEquals;
 
-/**
- * Created by chris on 03/11/2017.
- */
 public class GuitarStrapTest {
 
   GuitarStrap guitarStrap;
 
   @Before
   public void before() {
-    guitarStrap = new GuitarStrap(100, 20, 30, "Guitar Strap");
+    guitarStrap = new GuitarStrap(100, 20, 30, "Guitar Strap", 10);
   }
 
   @Test

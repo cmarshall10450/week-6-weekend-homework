@@ -9,8 +9,8 @@ abstract class Instrument extends Item implements Playable {
   private Colour colour;
   private InstrumentType type;
 
-  Instrument(Colour colour, InstrumentType type, double buyPrice, double sellPrice, String description) {
-    super(buyPrice, sellPrice, description, ItemType.INSTRUMENT);
+  Instrument(Colour colour, InstrumentType type, double buyPrice, double sellPrice, String description, int stockCount) {
+    super(buyPrice, sellPrice, description, ItemType.INSTRUMENT, stockCount);
     this.colour = colour;
     this.type = type;
   }
